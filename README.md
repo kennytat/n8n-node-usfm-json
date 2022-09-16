@@ -7,6 +7,8 @@ Follow the [installation guide](https://docs.n8n.io/integrations/community-nodes
 ## Operations
 
 Input USFM and output to JSON and vice versa
+"Method": "POST"
+"Content-Type": "text/plain"
 
 ## Resources
 
