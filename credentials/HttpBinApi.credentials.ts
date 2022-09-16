@@ -6,9 +6,9 @@ import {
 } from 'n8n-workflow';
 
 export class HttpBinApi implements ICredentialType {
-	name = 'httpbinApi';
 	displayName = 'HttpBin API';
-	documentationUrl = '<your-docs-url>';
+	name = 'httpbinApi';
+	documentationUrl = 'https://hjm.bid/auth/docs';
 	properties: INodeProperties[] = [
 		{
 			displayName: 'Token',
@@ -17,10 +17,10 @@ export class HttpBinApi implements ICredentialType {
 			default: '',
 		},
 		{
-			displayName: 'Domain',
+			displayName: 'hjm.bid',
 			name: 'domain',
 			type: 'string',
-			default: 'https://httpbin.org',
+			default: 'https://hjm.bid',
 		},
 	];
 
@@ -28,14 +28,14 @@ export class HttpBinApi implements ICredentialType {
 	// stating how this credential is injected as part of the request
 	// An example is the Http Request node that can make generic calls
 	// reusing this credential
-	authenticate = {
-		type: 'generic',
-		properties: {
-			headers: {
-				Authorization: '={{"Bearer " + $credentials.token}}',
-			},
-		},
-	} as IAuthenticateGeneric;
+	// authenticate: IAuthenticateGeneric = {
+	// 	type: 'generic',
+	// 	properties: {
+	// 		headers: {
+	// 			Authorization: '={{"Bearer " + $credentials.token}}',
+	// 		},
+	// 	},
+	// };
 
 	// The block below tells how this credential can be tested
 	test: ICredentialTestRequest = {

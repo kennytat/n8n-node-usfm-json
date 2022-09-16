@@ -45,10 +45,10 @@ export const httpVerbOperations: INodeProperties[] = [
 // We do that by adding `operation: ["get"]` to `displayOptions.show`
 const getOperation: INodeProperties[] = [
 	{
+		displayName: 'Type of Data',
 		name: 'typeofData',
 		default: 'queryParameter',
 		description: 'Select type of data to send [Query Parameters]',
-		displayName: 'Type of Data',
 		displayOptions: {
 			show: {
 				resource: ['httpVerb'],
@@ -65,10 +65,10 @@ const getOperation: INodeProperties[] = [
 		required: true,
 	},
 	{
+		displayName: 'Query Parameters',
 		name: 'arguments',
 		default: {},
 		description: "The request's query parameters",
-		displayName: 'Query Parameters',
 		displayOptions: {
 			show: {
 				resource: ['httpVerb'],
@@ -77,8 +77,8 @@ const getOperation: INodeProperties[] = [
 		},
 		options: [
 			{
-				name: 'keyvalue',
 				displayName: 'Key:Value',
+				name: 'keyvalue',
 				values: [
 					{
 						displayName: 'Key',
@@ -116,10 +116,10 @@ const getOperation: INodeProperties[] = [
 // We do that by adding `operation: ["delete"]` to `displayOptions.show`
 const deleteOperation: INodeProperties[] = [
 	{
+		displayName: 'Type of Data',
 		name: 'typeofData',
 		default: 'queryParameter',
 		description: 'Select type of data to send [Query Parameter Arguments, JSON-Body]',
-		displayName: 'Type of Data',
 		displayOptions: {
 			show: {
 				resource: ['httpVerb'],
@@ -140,10 +140,10 @@ const deleteOperation: INodeProperties[] = [
 		type: 'options',
 	},
 	{
+		displayName: 'Query Parameters',
 		name: 'arguments',
 		default: {},
 		description: "The request's query parameters",
-		displayName: 'Query Parameters',
 		displayOptions: {
 			show: {
 				resource: ['httpVerb'],
@@ -153,8 +153,8 @@ const deleteOperation: INodeProperties[] = [
 		},
 		options: [
 			{
-				name: 'keyvalue',
 				displayName: 'Key:Value',
+				name: 'keyvalue',
 				values: [
 					{
 						displayName: 'Key',
@@ -187,10 +187,10 @@ const deleteOperation: INodeProperties[] = [
 		},
 	},
 	{
+		displayName: 'JSON Object',
 		name: 'arguments',
 		default: {},
 		description: "The request's JSON properties",
-		displayName: 'JSON Object',
 		displayOptions: {
 			show: {
 				resource: ['httpVerb'],
@@ -200,8 +200,8 @@ const deleteOperation: INodeProperties[] = [
 		},
 		options: [
 			{
-				name: 'keyvalue',
 				displayName: 'Key:Value',
+				name: 'keyvalue',
 				values: [
 					{
 						displayName: 'Key',

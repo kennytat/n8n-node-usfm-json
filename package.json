@@ -1,15 +1,15 @@
 {
   "name": "n8n-nodes-usfm-json",
-  "version": "0.1.0",
-  "description": "",
+  "version": "0.1.1",
+  "description": "A n8n nodes for usfm-json parser",
   "keywords": [
     "n8n-community-node-package"
   ],
   "license": "MIT",
   "homepage": "",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "Kenny Tat",
+    "email": "kennytat.app@gmail.com"
   },
   "repository": {
     "type": "git",
@@ -51,6 +51,7 @@
     "typescript": "~4.6.0"
   },
   "dependencies": {
+    "eslint": "^8.23.1",
     "usfm-js": "^3.4.1"
   }
 }
